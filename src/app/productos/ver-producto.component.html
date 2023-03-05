@@ -1,0 +1,42 @@
+<div class="container">
+    <h2 class="mt-4 mb-3" style="font-size: 40px;">Detalles del tu producto seleccionado</h2>
+    <br><br>
+    <nav aria-label="breadcrumb" style="padding: 0.75rem; background-color: #e9ecef; margin-bottom: 1rem;">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+      </ol>
+    </nav>
+
+<div class="card mb-4">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="#"> <img class="img-fluid rounded"
+            src="http://placehold.it/500x325"  alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <form action="ventas/carrito" method="POST">
+            <h2 class="card-title">Nombre producto</h2>
+
+            <ul class="list-group">
+              <li class="list-group-item"><h5>Precio: </h5></li>
+              <li class="list-group-item">
+                <p>Descripción:</p>
+              </li>
+              <li class="list-group-item"><h6>
+                Cantidad: <input type="number" id="cantidad" name="cantidad" autocomplete="off"
+                min="1" max="5" value="1">
+              </h6></li>
+            </ul>
+
+
+            <button type="submit"  class="btn btn-dark">Añadir al carrito </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

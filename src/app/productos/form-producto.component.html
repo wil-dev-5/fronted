@@ -1,0 +1,51 @@
+<style>  
+    .title{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }    
+</style>
+<br><br><br>
+<div class="container card bg-dark text-white">
+    <div class="card-header title">{{titulo}}</div>
+    <div class="card-body">
+        <form (ngSubmit)="create()" ngNativeValidate>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <input type="text" required class="form-control" name="nombre" [(ngModel)]="producto.nombre">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Descripción</label>
+                <div class="col-sm-6">
+                    <input type="text" required="" class="form-control" name="descripcion" [(ngModel)]="producto.descripcion">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Categoría</label>
+                <div class="col-sm-6">
+                    <input type="text" required class="form-control" name="categoria" [(ngModel)]="producto.categoria">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Precio</label>
+                <div class="col-sm-6">
+                    <input type="text" required class="form-control" name="precio" [(ngModel)]="producto.precio">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Stock</label>
+                <div class="col-sm-6">
+                    <input type="number" required class="form-control" name="stock" [(ngModel)]="producto.stock">
+                </div>
+            </div><br>
+            <div class="form-group row" >
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button">Crear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
