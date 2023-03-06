@@ -22,7 +22,7 @@ export class ClienteService {
   }
   
   //obtener el id del cliente
-  getCliente(id:any): Observable<Cliente> {
+  getUsuario(id:any): Observable<Cliente> {
     return this.http.get<Cliente>(`${this.urlEndPoint}/${id}`);
   }
 

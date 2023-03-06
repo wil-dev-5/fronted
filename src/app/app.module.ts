@@ -22,6 +22,9 @@ import { VerProductoComponent } from './productos/ver-producto.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { IngresoComponent } from './usuarios/ingreso.component';
 import { RegistroComponent } from './usuarios/registro.component';
+import { UsuarioService } from './usuarios/usuario.service';
+import { DetalleService } from './ventas/detalle.service';
+import { OrdenService } from './ventas/orden.service';
 
 
 const RUTAS: Routes = [
@@ -61,12 +64,13 @@ const RUTAS: Routes = [
     UsuariosComponent,
     IngresoComponent,
     RegistroComponent,
+    UsuariosComponent,
   
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(RUTAS)
   ],
-  providers: [ClienteService, ProductoService],
+  providers: [ClienteService, ProductoService, UsuarioService, DetalleService, OrdenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

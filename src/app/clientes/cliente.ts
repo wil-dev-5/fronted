@@ -7,6 +7,5 @@ export class Cliente {
     telefono: string; 
     correo: string;
     fecha_nacimiento: string;
-    usuario: string;
-    clave: string;
+    usuario_id:number;
 }
