@@ -19,6 +19,9 @@ import { DetalleVentasComponent } from './ventas/detalle-ventas.component';
 import { OrdenVentasComponent } from './ventas/orden-ventas.component';
 import { ComprasComponent} from './ventas/compras.component';
 import { VerProductoComponent } from './productos/ver-producto.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { IngresoComponent } from './usuarios/ingreso.component';
+import { RegistroComponent } from './usuarios/registro.component';
 
 
 const RUTAS: Routes = [
@@ -32,9 +35,12 @@ const RUTAS: Routes = [
   {path:'productos/form-productos/:id', component: FormProductoComponent},
   {path:'productos/ver-producto', component: VerProductoComponent},
   {path:'ventas/carrito', component: CarritoComponent},
+  {path:'ventas/ordenes', component: OrdenVentasComponent},
+  {path:'ventas/detalles', component: DetalleVentasComponent},
   {path:'ventas/compras', component: ComprasComponent},
+  {path:'usuarios/ingreso', component: IngresoComponent},
+  {path:'usuarios/registro', component: RegistroComponent},
   
-
 ];
 
 @NgModule({
@@ -52,6 +58,10 @@ const RUTAS: Routes = [
     DetalleVentasComponent,
     OrdenVentasComponent,
     VerProductoComponent,
+    UsuariosComponent,
+    IngresoComponent,
+    RegistroComponent,
+  
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(RUTAS)
