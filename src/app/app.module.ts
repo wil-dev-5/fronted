@@ -20,8 +20,8 @@ import { OrdenVentasComponent } from './ventas/orden-ventas.component';
 import { ComprasComponent} from './ventas/compras.component';
 import { VerProductoComponent } from './productos/ver-producto.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { IngresoComponent } from './usuarios/ingreso.component';
-import { RegistroComponent } from './usuarios/registro.component';
+import { FormIngresoComponent } from './usuarios/form-ingreso.component';
+import { FormRegistroComponent } from './usuarios/form-registro.component';
 import { UsuarioService } from './usuarios/usuario.service';
 import { DetalleService } from './ventas/detalle.service';
 import { OrdenService } from './ventas/orden.service';
@@ -41,8 +41,8 @@ const RUTAS: Routes = [
   {path:'ventas/ordenes', component: OrdenVentasComponent},
   {path:'ventas/detalles', component: DetalleVentasComponent},
   {path:'ventas/compras', component: ComprasComponent},
-  {path:'usuarios/ingreso', component: IngresoComponent},
-  {path:'usuarios/registro', component: RegistroComponent},
+  {path:'usuarios/form-ingreso', component: FormIngresoComponent},
+  {path:'usuarios/form-registro', component: FormRegistroComponent},
   
 ];
 
@@ -62,8 +62,8 @@ const RUTAS: Routes = [
     OrdenVentasComponent,
     VerProductoComponent,
     UsuariosComponent,
-    IngresoComponent,
-    RegistroComponent,
+    FormIngresoComponent,
+    FormRegistroComponent,
     UsuariosComponent,
   
   ],
