@@ -1,9 +1,13 @@
 *{
-    margin: 0;
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100%;
-    position: relative;
+    margin: 0;
+    display: grid;
+    min-height: 100vh!important;
+    grid-template-rows: auto 1fr auto;
+}
+
+app-footer{
+
 }
