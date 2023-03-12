@@ -14,17 +14,18 @@ import { FormsModule } from '@angular/forms';
 import { FormProductoComponent } from './productos/form-producto.component';
 import { ProductoService } from './productos/producto.service';
 import { HomeProductoComponent } from './productos/home-producto.component';
-import { CarritoComponent } from './ventas/carrito.component';
 import { DetalleVentasComponent } from './ventas/detalle-ventas.component';
 import { OrdenVentasComponent } from './ventas/orden-ventas.component';
 import { ComprasComponent} from './ventas/compras.component';
-import { VerProductoComponent } from './productos/ver-producto.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { FormIngresoComponent } from './usuarios/form-ingreso.component';
 import { FormRegistroComponent } from './usuarios/form-registro.component';
 import { UsuarioService } from './usuarios/usuario.service';
 import { DetalleService } from './ventas/detalle.service';
 import { OrdenService } from './ventas/orden.service';
+import { CategoriasComponent } from './categorias/categorias.component';
+import { CategoriaService } from './categorias/categoria.service';
+import { FormCategoriaComponent } from './categorias/form-categoria.component';
 
 
 const RUTAS: Routes = [
@@ -36,8 +37,12 @@ const RUTAS: Routes = [
   {path:'productos', component: ProductosComponent},
   {path:'productos/form-productos', component: FormProductoComponent},
   {path:'productos/form-productos/:id', component: FormProductoComponent},
-  {path:'productos/ver-producto', component: VerProductoComponent},
-  {path:'ventas/carrito', component: CarritoComponent},
+  {path:'productos', component: CategoriasComponent},
+  {path:'productos/form-productos', component: FormCategoriaComponent},
+  {path:'productos/form-productos/:id', component: FormCategoriaComponent},
+  {path:'categorias', component: CategoriasComponent},
+  {path:'categorias/form-categorias', component: FormCategoriaComponent},
+  {path:'categorias/form-categorias/:id', component: FormCategoriaComponent},
   {path:'ventas/ordenes', component: OrdenVentasComponent},
   {path:'ventas/detalles', component: DetalleVentasComponent},
   {path:'ventas/compras', component: ComprasComponent},
@@ -56,21 +61,21 @@ const RUTAS: Routes = [
     FormClienteComponent,
     FormProductoComponent,
     HomeProductoComponent,
-    CarritoComponent,
     ComprasComponent,
     DetalleVentasComponent,
     OrdenVentasComponent,
-    VerProductoComponent,
     UsuariosComponent,
     FormIngresoComponent,
     FormRegistroComponent,
     UsuariosComponent,
-  
+    CategoriasComponent,
+    FormCategoriaComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(RUTAS)
   ],
-  providers: [ClienteService, ProductoService, UsuarioService, DetalleService, OrdenService],
-  bootstrap: [AppComponent]
+  providers: [ClienteService, ProductoService, UsuarioService, DetalleService, OrdenService, CategoriaService],
+  bootstrap: [AppComponent
+  ]
 })
 export class AppModule { }

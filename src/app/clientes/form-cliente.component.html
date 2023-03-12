@@ -12,6 +12,12 @@
     <div class="card-body">
         <form (ngSubmit)="create()" ngNativeValidate>
             <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Cedula</label>
+                <div class="col-sm-6">
+                    <input type="text" required class="form-control" name="cedula" [(ngModel)]="cliente.cedula">
+                </div>
+            </div><br>
+            <div class="form-group row">
                 <label for="" class="col-form-label col-sm-2">Nombre</label>
                 <div class="col-sm-6">
                     <input type="text" required class="form-control" name="nombre" [(ngModel)]="cliente.nombre">
@@ -36,15 +42,21 @@
                 </div>
             </div><br>
             <div class="form-group row">
-                <label for="" class="col-form-label col-sm-2">Correo</label>
-                <div class="col-sm-6">
-                    <input type="email" required class="form-control" name="correo" [(ngModel)]="cliente.correo">
-                </div>
-            </div><br>
-            <div class="form-group row">
                 <label for="" class="col-form-label col-sm-2">Fecha nacimiento</label>
                 <div class="col-sm-6">
                     <input type="date" required class="form-control" name="fecha_nacimento" [(ngModel)]="cliente.fecha_nacimiento">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Correo</label>
+                <div class="col-sm-6">
+                    <input type="email" required class="form-control" name="correo" >
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Clave</label>
+                <div class="col-sm-6">
+                    <input type="password" required class="form-control" name="clave" autocomplete="new-password">
                 </div>
             </div><br>
             <div class="form-group row" >

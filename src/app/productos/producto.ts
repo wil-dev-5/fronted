@@ -1,9 +1,9 @@
 export class Producto{
     id:number;
     nombre: string;
-    descripcion: string;
+    color: string;
+    talla: string;
     precio: number;
     stock: number;
     foto: string;
-    categoria_id: number;
 }

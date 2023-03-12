@@ -18,11 +18,27 @@
                 </div>
             </div><br>
             <div class="form-group row">
-                <label for="" class="col-form-label col-sm-2">Descripción</label>
+                <label for="" class="col-form-label col-sm-2">Color</label>
                 <div class="col-sm-6">
-                    <input type="text" required class="form-control" name="descripcion" [(ngModel)]="producto.descripcion">
+                    <input type="text" required class="form-control" name="color" [(ngModel)]="producto.color">
                 </div>
             </div><br>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Talla</label>
+                <div class="col-sm-6">
+                    <input type="text" required class="form-control" name="talla" [(ngModel)]="producto.talla">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="categoria" class="col-form-label col-sm-2">Categoría</label>
+                <div class="col-sm-6">
+                  <select id="categoria" class="form-select" required name="categoria">
+                    <option value="" selected disabled></option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                  </select>
+                </div>
+              </div><br>
             <div class="form-group row">
                 <label for="" class="col-form-label col-sm-2">Precio</label>
                 <div class="col-sm-6">
@@ -34,7 +50,13 @@
                 <div class="col-sm-6">
                     <input type="number"  required class="form-control" name="stock" [(ngModel)]="producto.stock">
                 </div>
-            </div><br>
+            </div>
+            <div class="form-group">           
+                <div class="col-sm-10"><br>
+                    <label class="control-label col-sm-2" for="img" style="margin-right: 30px;">Imagen:</label>
+                  <input type="file" class="form-control-file" id="img" name="img">
+                </div>
+              </div><br>
             <div class="form-group row" >
                 <div class="col-sm-6">
                     <button class="btn btn-primary" role="button">Crear</button>

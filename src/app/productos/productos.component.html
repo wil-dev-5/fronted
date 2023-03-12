@@ -13,7 +13,9 @@
               <tr>
                   <th>id</th>
                   <th>nombre</th>
-                  <th>descripcion</th>
+                  <th>color</th>
+                  <th>talla</th>
+                  <th>categoría</th>
                   <th>precio</th>
                   <th>stock</th>        
                   <th>modificar</th>
@@ -24,7 +26,9 @@
               <tr *ngFor="let producto of productos">
                   <td>{{producto.id}}</td>
                   <td>{{producto.nombre}}</td>
-                  <td>{{producto.descripcion}}</td>
+                  <td>{{producto.color}}</td>
+                  <th>{{producto.talla}}</th>
+                  <th></th>
                   <td>{{producto.precio}}</td>
                   <td>{{producto.stock}}</td>                  
                   <td>

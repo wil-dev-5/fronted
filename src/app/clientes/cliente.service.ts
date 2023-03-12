@@ -36,5 +36,4 @@ export class ClienteService {
     return this.http.delete<Cliente>(`${this.urlEndPoint}/${id}`);
   }
 
-
 }

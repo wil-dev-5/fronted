@@ -1,3 +1,8 @@
+<style>
+  input::placeholder{
+    opacity: 0.8;
+  }
+</style>
 <br>
 <div class="container">
     <div class="card mb-3" style="background-color: #e9ecef;">
@@ -13,44 +18,50 @@
     <br>
     <form (ngSubmit)="create()" ngNativeValidate>
       <div class="form-group">
-        <label for="">Cédula:</label> <input type="text"
+        <label style="margin-bottom:5px;">Cédula:</label> <input type="text"
           class="form-control" name="cedula" required
           placeholder="Ingrese su cédula" autocomplete="off">
       </div>
       <br>
       <div class="form-group">
-        <label for="">Nombre:</label> <input type="text"
+        <label style="margin-bottom:5px;">Nombre:</label> <input type="text"
           class="form-control" name="nombre" required
           placeholder="Ingrese su nombre" autocomplete="off">
       </div>
       <br>
       <div class="form-group">
-        <label for="">Apellido:</label> <input type="text"
+        <label style="margin-bottom:5px;">Apellido:</label> <input type="text"
           class="form-control" name="apellido" required
           placeholder="Ingrese su apellido" autocomplete="off">
       </div>
       <br>
       <div class="form-group">
-        <label for="">Teléfono:</label> <input type="text"
-          class="form-control" name="telefono" required
-          placeholder="Ingrese su teléfono" autocomplete="off">
-      </div>
-      <br>
-      <div class="form-group">
-        <label for="">Dirección:</label> <input type="text"
+        <label style="margin-bottom:5px;">Dirección:</label> <input type="text"
           class="form-control" name="direccion" required
           placeholder="Ingrese su dirección" autocomplete="off">
       </div>
       <br>
       <div class="form-group">
-        <label for="">Correo:</label> <input type="email"
+        <label style="margin-bottom:5px;">Teléfono:</label> <input type="text"
+          class="form-control" name="telefono" required
+          placeholder="Ingrese su teléfono" autocomplete="off">
+      </div>
+      <br>
+      <div class="form-group">
+        <label style="margin-bottom:5px;">Fecha nacimiento:</label> <input type="text"
+          class="form-control" name="fecha_nacimento" required
+          placeholder="Ingrese su fecha de nacimiento" autocomplete="off">
+      </div>
+      <br>
+      <div class="form-group">
+        <label style="margin-bottom:5px;">Correo:</label> <input type="email"
           class="form-control" name="correo" required
           placeholder="Ingrese su correo" autocomplete="off">
       </div>
       <br>
       <div class="form-group">
-        <label for="">Contraseña</label> <input type="password"
-          class="form-control" name="clave" required placeholder="Ingrese su clave" autocomplete="off">
+        <label style="margin-bottom:5px;">Contraseña</label> <input type="password"
+          class="form-control" name="clave" required placeholder="Ingrese su clave" autocomplete="new-password">
       </div>
       <br>
       <div class="col-sm-2">

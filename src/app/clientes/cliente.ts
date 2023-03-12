@@ -5,7 +5,5 @@ export class Cliente {
     apellido: string; 
     direccion: string;
     telefono: string; 
-    correo: string;
     fecha_nacimiento: string;
-    usuario_id:number;
 }

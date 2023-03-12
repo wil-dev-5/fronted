@@ -6,7 +6,7 @@ import { Producto } from "./producto";
 @Injectable({
     providedIn: 'root'
   })
-  export class ProductoService {
+export class ProductoService {
   
     private urlEndPoint:string = "http://localhost:8080/api/productos";
     private httpHeaders = new  HttpHeaders({'Content-Type': 'Application/json'});

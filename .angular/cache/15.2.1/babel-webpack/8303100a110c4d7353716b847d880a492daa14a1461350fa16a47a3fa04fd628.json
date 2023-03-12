@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Categoria {}","map":{"version":3,"mappings":"AAAA,OAAM,MAAOA,SAAS","names":["Categoria"],"sourceRoot":"","sources":["C:\\workspace\\angular\\V93\\src\\app\\categorias\\categoria.ts"],"sourcesContent":["export class Categoria{\r\n    id: number;\r\n    genero:string;\r\n}"]},"metadata":{},"sourceType":"module","externalDependencies":[]}
